@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F13C2C6427D0E6AE00E5E532 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C2C6327D0E6AE00E5E532 /* EntryView.swift */; };
+		F13C2C6627D0F0E100E5E532 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C2C6527D0F0E100E5E532 /* EntryViewModel.swift */; };
+		F16F255627CF9B2E00A4101E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16F255527CF9B2E00A4101E /* GoogleService-Info.plist */; };
+		F17124D128059B26003A4EA1 /* RematchAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17124D028059B26003A4EA1 /* RematchAlertView.swift */; };
+		F17124D428059EFA003A4EA1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17124D328059EFA003A4EA1 /* Game.swift */; };
+		F1897D2427EC9DB600E47FA4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F1897D2327EC9DB600E47FA4 /* FirebaseAuth */; };
+		F1897D2627EC9DB600E47FA4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F1897D2527EC9DB600E47FA4 /* FirebaseFirestore */; };
+		F18B947F27D661AA00E46825 /* DevNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B947E27D661AA00E46825 /* DevNotes.swift */; };
+		F1CD7B5127F70C2500C8CAE2 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD7B5027F70C2500C8CAE2 /* ErrorHandler.swift */; };
+		F1DB4EAF27CE6D2B0039E2F4 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DB4EAE27CE6D2B0039E2F4 /* GridCellView.swift */; };
+		F1DB4EB127CE713B0039E2F4 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DB4EB027CE713B0039E2F4 /* GameView.swift */; };
+		F1E416F827C7D8D1003B69FE /* CeeFourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E416F727C7D8D1003B69FE /* CeeFourApp.swift */; };
+		F1E416FA27C7D8D1003B69FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E416F927C7D8D1003B69FE /* ContentView.swift */; };
+		F1E416FC27C7D8D7003B69FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E416FB27C7D8D7003B69FE /* Assets.xcassets */; };
+		F1E416FF27C7D8D7003B69FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E416FE27C7D8D7003B69FE /* Preview Assets.xcassets */; };
+		F1E4170927C7D8D8003B69FE /* CeeFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4170827C7D8D8003B69FE /* CeeFourTests.swift */; };
+		F1E4171327C7D8D8003B69FE /* CeeFourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4171227C7D8D8003B69FE /* CeeFourUITests.swift */; };
+		F1E4171527C7D8D8003B69FE /* CeeFourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4171427C7D8D8003B69FE /* CeeFourUITestsLaunchTests.swift */; };
+		F1E4172227C7D964003B69FE /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4172127C7D964003B69FE /* GameViewModel.swift */; };
+		F1E4172427C7DCBE003B69FE /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4172327C7DCBE003B69FE /* BoardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1E4170527C7D8D8003B69FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E416EC27C7D8D1003B69FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E416F327C7D8D1003B69FE;
+			remoteInfo = CeeFour;
+		};
+		F1E4170F27C7D8D8003B69FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E416EC27C7D8D1003B69FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E416F327C7D8D1003B69FE;
+			remoteInfo = CeeFour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F13C2C6327D0E6AE00E5E532 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		F13C2C6527D0F0E100E5E532 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
+		F16F255527CF9B2E00A4101E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F17124D028059B26003A4EA1 /* RematchAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RematchAlertView.swift; sourceTree = "<group>"; };
+		F17124D328059EFA003A4EA1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F18B947E27D661AA00E46825 /* DevNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevNotes.swift; sourceTree = "<group>"; };
+		F1CD7B5027F70C2500C8CAE2 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		F1DB4EAE27CE6D2B0039E2F4 /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+		F1DB4EB027CE713B0039E2F4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F1E416F427C7D8D1003B69FE /* CeeFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeeFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E416F727C7D8D1003B69FE /* CeeFourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeeFourApp.swift; sourceTree = "<group>"; };
+		F1E416F927C7D8D1003B69FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1E416FB27C7D8D7003B69FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E416FE27C7D8D7003B69FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1E4170427C7D8D8003B69FE /* CeeFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeeFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E4170827C7D8D8003B69FE /* CeeFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeeFourTests.swift; sourceTree = "<group>"; };
+		F1E4170E27C7D8D8003B69FE /* CeeFourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeeFourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E4171227C7D8D8003B69FE /* CeeFourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeeFourUITests.swift; sourceTree = "<group>"; };
+		F1E4171427C7D8D8003B69FE /* CeeFourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeeFourUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1E4172127C7D964003B69FE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F1E4172327C7DCBE003B69FE /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1E416F127C7D8D1003B69FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1897D2427EC9DB600E47FA4 /* FirebaseAuth in Frameworks */,
+				F1897D2627EC9DB600E47FA4 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E4170127C7D8D8003B69FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E4170B27C7D8D8003B69FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F156794127D7B44700029341 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F13C2C6527D0F0E100E5E532 /* EntryViewModel.swift */,
+				F1E4172127C7D964003B69FE /* GameViewModel.swift */,
+				F1CD7B5027F70C2500C8CAE2 /* ErrorHandler.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F16F257A27CFC1A600A4101E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1E416F927C7D8D1003B69FE /* ContentView.swift */,
+				F13C2C6327D0E6AE00E5E532 /* EntryView.swift */,
+				F1DB4EB027CE713B0039E2F4 /* GameView.swift */,
+				F17124D028059B26003A4EA1 /* RematchAlertView.swift */,
+				F1E4172327C7DCBE003B69FE /* BoardView.swift */,
+				F1DB4EAE27CE6D2B0039E2F4 /* GridCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F16F257E27CFCB1000A4101E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F17124D228059ED4003A4EA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F17124D328059EFA003A4EA1 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1E416EB27C7D8D1003B69FE = {
+			isa = PBXGroup;
+			children = (
+				F1E416F627C7D8D1003B69FE /* CeeFour */,
+				F1E4170727C7D8D8003B69FE /* CeeFourTests */,
+				F1E4171127C7D8D8003B69FE /* CeeFourUITests */,
+				F1E416F527C7D8D1003B69FE /* Products */,
+				F16F257E27CFCB1000A4101E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1E416F527C7D8D1003B69FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1E416F427C7D8D1003B69FE /* CeeFour.app */,
+				F1E4170427C7D8D8003B69FE /* CeeFourTests.xctest */,
+				F1E4170E27C7D8D8003B69FE /* CeeFourUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E416F627C7D8D1003B69FE /* CeeFour */ = {
+			isa = PBXGroup;
+			children = (
+				F16F255527CF9B2E00A4101E /* GoogleService-Info.plist */,
+				F1E416F727C7D8D1003B69FE /* CeeFourApp.swift */,
+				F18B947E27D661AA00E46825 /* DevNotes.swift */,
+				F16F257A27CFC1A600A4101E /* Views */,
+				F156794127D7B44700029341 /* ViewModels */,
+				F17124D228059ED4003A4EA1 /* Models */,
+				F1E416FB27C7D8D7003B69FE /* Assets.xcassets */,
+				F1E416FD27C7D8D7003B69FE /* Preview Content */,
+			);
+			path = CeeFour;
+			sourceTree = "<group>";
+		};
+		F1E416FD27C7D8D7003B69FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1E416FE27C7D8D7003B69FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1E4170727C7D8D8003B69FE /* CeeFourTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E4170827C7D8D8003B69FE /* CeeFourTests.swift */,
+			);
+			path = CeeFourTests;
+			sourceTree = "<group>";
+		};
+		F1E4171127C7D8D8003B69FE /* CeeFourUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1E4171227C7D8D8003B69FE /* CeeFourUITests.swift */,
+				F1E4171427C7D8D8003B69FE /* CeeFourUITestsLaunchTests.swift */,
+			);
+			path = CeeFourUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1E416F327C7D8D1003B69FE /* CeeFour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E4171827C7D8D8003B69FE /* Build configuration list for PBXNativeTarget "CeeFour" */;
+			buildPhases = (
+				F1E416F027C7D8D1003B69FE /* Sources */,
+				F1E416F127C7D8D1003B69FE /* Frameworks */,
+				F1E416F227C7D8D1003B69FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeeFour;
+			packageProductDependencies = (
+				F1897D2327EC9DB600E47FA4 /* FirebaseAuth */,
+				F1897D2527EC9DB600E47FA4 /* FirebaseFirestore */,
+			);
+			productName = CeeFour;
+			productReference = F1E416F427C7D8D1003B69FE /* CeeFour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1E4170327C7D8D8003B69FE /* CeeFourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E4171B27C7D8D8003B69FE /* Build configuration list for PBXNativeTarget "CeeFourTests" */;
+			buildPhases = (
+				F1E4170027C7D8D8003B69FE /* Sources */,
+				F1E4170127C7D8D8003B69FE /* Frameworks */,
+				F1E4170227C7D8D8003B69FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1E4170627C7D8D8003B69FE /* PBXTargetDependency */,
+			);
+			name = CeeFourTests;
+			productName = CeeFourTests;
+			productReference = F1E4170427C7D8D8003B69FE /* CeeFourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1E4170D27C7D8D8003B69FE /* CeeFourUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E4171E27C7D8D8003B69FE /* Build configuration list for PBXNativeTarget "CeeFourUITests" */;
+			buildPhases = (
+				F1E4170A27C7D8D8003B69FE /* Sources */,
+				F1E4170B27C7D8D8003B69FE /* Frameworks */,
+				F1E4170C27C7D8D8003B69FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1E4171027C7D8D8003B69FE /* PBXTargetDependency */,
+			);
+			name = CeeFourUITests;
+			productName = CeeFourUITests;
+			productReference = F1E4170E27C7D8D8003B69FE /* CeeFourUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1E416EC27C7D8D1003B69FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F1E416F327C7D8D1003B69FE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F1E4170327C7D8D8003B69FE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F1E416F327C7D8D1003B69FE;
+					};
+					F1E4170D27C7D8D8003B69FE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F1E416F327C7D8D1003B69FE;
+					};
+				};
+			};
+			buildConfigurationList = F1E416EF27C7D8D1003B69FE /* Build configuration list for PBXProject "CeeFour" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1E416EB27C7D8D1003B69FE;
+			packageReferences = (
+				F1897D2227EC9DB600E47FA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F1E416F527C7D8D1003B69FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1E416F327C7D8D1003B69FE /* CeeFour */,
+				F1E4170327C7D8D8003B69FE /* CeeFourTests */,
+				F1E4170D27C7D8D8003B69FE /* CeeFourUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1E416F227C7D8D1003B69FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E416FF27C7D8D7003B69FE /* Preview Assets.xcassets in Resources */,
+				F1E416FC27C7D8D7003B69FE /* Assets.xcassets in Resources */,
+				F16F255627CF9B2E00A4101E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E4170227C7D8D8003B69FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E4170C27C7D8D8003B69FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1E416F027C7D8D1003B69FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E416FA27C7D8D1003B69FE /* ContentView.swift in Sources */,
+				F1E4172427C7DCBE003B69FE /* BoardView.swift in Sources */,
+				F1E416F827C7D8D1003B69FE /* CeeFourApp.swift in Sources */,
+				F1DB4EAF27CE6D2B0039E2F4 /* GridCellView.swift in Sources */,
+				F1CD7B5127F70C2500C8CAE2 /* ErrorHandler.swift in Sources */,
+				F1DB4EB127CE713B0039E2F4 /* GameView.swift in Sources */,
+				F1E4172227C7D964003B69FE /* GameViewModel.swift in Sources */,
+				F17124D428059EFA003A4EA1 /* Game.swift in Sources */,
+				F13C2C6627D0F0E100E5E532 /* EntryViewModel.swift in Sources */,
+				F18B947F27D661AA00E46825 /* DevNotes.swift in Sources */,
+				F17124D128059B26003A4EA1 /* RematchAlertView.swift in Sources */,
+				F13C2C6427D0E6AE00E5E532 /* EntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E4170027C7D8D8003B69FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E4170927C7D8D8003B69FE /* CeeFourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E4170A27C7D8D8003B69FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E4171527C7D8D8003B69FE /* CeeFourUITestsLaunchTests.swift in Sources */,
+				F1E4171327C7D8D8003B69FE /* CeeFourUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1E4170627C7D8D8003B69FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E416F327C7D8D1003B69FE /* CeeFour */;
+			targetProxy = F1E4170527C7D8D8003B69FE /* PBXContainerItemProxy */;
+		};
+		F1E4171027C7D8D8003B69FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E416F327C7D8D1003B69FE /* CeeFour */;
+			targetProxy = F1E4170F27C7D8D8003B69FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1E4171627C7D8D8003B69FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1E4171727C7D8D8003B69FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1E4171927C7D8D8003B69FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CeeFour/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.CeeFour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1E4171A27C7D8D8003B69FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CeeFour/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.CeeFour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1E4171C27C7D8D8003B69FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.CeeFourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeeFour.app/CeeFour";
+			};
+			name = Debug;
+		};
+		F1E4171D27C7D8D8003B69FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.CeeFourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeeFour.app/CeeFour";
+			};
+			name = Release;
+		};
+		F1E4171F27C7D8D8003B69FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.CeeFourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeeFour;
+			};
+			name = Debug;
+		};
+		F1E4172027C7D8D8003B69FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liamjones.CeeFourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeeFour;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E416EF27C7D8D1003B69FE /* Build configuration list for PBXProject "CeeFour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E4171627C7D8D8003B69FE /* Debug */,
+				F1E4171727C7D8D8003B69FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E4171827C7D8D8003B69FE /* Build configuration list for PBXNativeTarget "CeeFour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E4171927C7D8D8003B69FE /* Debug */,
+				F1E4171A27C7D8D8003B69FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E4171B27C7D8D8003B69FE /* Build configuration list for PBXNativeTarget "CeeFourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E4171C27C7D8D8003B69FE /* Debug */,
+				F1E4171D27C7D8D8003B69FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E4171E27C7D8D8003B69FE /* Build configuration list for PBXNativeTarget "CeeFourUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E4171F27C7D8D8003B69FE /* Debug */,
+				F1E4172027C7D8D8003B69FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1897D2227EC9DB600E47FA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1897D2327EC9DB600E47FA4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1897D2227EC9DB600E47FA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F1897D2527EC9DB600E47FA4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1897D2227EC9DB600E47FA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F1E416EC27C7D8D1003B69FE /* Project object */;
+}
