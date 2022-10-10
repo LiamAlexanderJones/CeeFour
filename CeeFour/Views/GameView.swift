@@ -58,7 +58,7 @@ struct GameView: View {
             .bold()
             .foregroundColor(board.winColour)
           
-          Button("Play again?", action: rematchRequest)
+          Button("Play again?", action: { rematchRequest(signal: 0) })
           .tint(.blue)
           .buttonStyle(.borderedProminent)
           .buttonBorderShape(.roundedRectangle)
@@ -83,8 +83,8 @@ struct GameView: View {
                 errorHandler.handleError(error, source: .sendMove(column: column))
               }
             }
-          case .sendRematchRequest: rematchRequest()
-          case .acceptRematchRequest: rematchAccept()
+          case .sendRematchRequest: rematchRequest(signal: 0)
+          case .acceptRematchRequest: rematchRequest(signal: 1)
           case .leaveGame: leave()
           default: break
           }
@@ -100,39 +100,22 @@ struct GameView: View {
     }
   }
 
-  func rematchRequest() {
+  func rematchRequest(signal: Int) {
     Task {
       do {
-        try await board.sendRematchRequest(gameID: game.id)
+        //try await board.sendRematchRequest(gameID: game.id)
+        try await board.rematchRequest(gameID: game.id, signal: signal)
       } catch {
         print("REMATCH REQUEST ERROR: \(error)")
-        errorHandler.handleError(error, source: .sendRematchRequest)
+        if signal == 0 {
+          errorHandler.handleError(error, source: .sendRematchRequest)
+        } else if signal == 1 {
+          errorHandler.handleError(error, source: .acceptRematchRequest)
+        }
       }
     }
   }
-  
-  func rematchAccept() {
-    Task {
-      do {
-        try await board.acceptRematchRequest(gameID: game.id)
-      } catch {
-        print("ACCEPT REQUEST ERROR: \(error)")
-        errorHandler.handleError(error, source: .acceptRematchRequest)
-      }
-    }
-  }
-  
-  func rematchDecline() {
-    Task {
-      do {
-        try await board.declineRematchRequest(gameID: game.id)
-      } catch {
-        print("OOPS: \(error)")
-      }
-    }
-  }
-  
-  
+
   func leave() {
     board.listener?.remove()
     Task {

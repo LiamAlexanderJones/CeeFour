@@ -19,10 +19,10 @@ struct RematchAlertView: View {
         .bold()
       if !board.madeRequest {
         HStack {
-          Button("Yes", action: rematchAccept)
+          Button("Yes", action: { rematchRequest(signal: 1) })
             .tint(.green)
             .buttonStyle(.borderedProminent)
-          Button("No", action: rematchDecline)
+          Button("No", action: { rematchRequest(signal: -1) })
             .tint(.red)
             .buttonStyle(.borderedProminent)
         }
@@ -37,30 +37,17 @@ struct RematchAlertView: View {
     )
   }
   
-  
-  
-  func rematchAccept() {
+  func rematchRequest(signal: Int) {
+    //Signal determines the request type. 0 makes a request, 1 accepts, -1 declines
     Task {
       do {
-        try await board.acceptRematchRequest(gameID: gameID)
+        try await board.rematchRequest(gameID: gameID, signal: signal)
       } catch {
-        print("ACCEPT REQUEST ERROR: \(error)")
-        //errorHandler.handleError(error, source: .acceptRematchRequest)
+        print("REMATCH REQUEST ERROR: \(error)")
       }
     }
   }
-  
-  func rematchDecline() {
-    Task {
-      do {
-        try await board.declineRematchRequest(gameID: gameID)
-      } catch {
-        print("OOPS: \(error)")
-      }
-    }
-  }
-  
-  
+ 
 }
 
 struct RematchAlertView_Previews: PreviewProvider {

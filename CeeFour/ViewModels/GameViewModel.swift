@@ -120,29 +120,16 @@ extension GameViewModel {
       .updateData(["moveColumn": column, "isRed": (playerColour == Disk.red)])
   }
   
-  func sendRematchRequest(gameID: String) async throws {
-    //We signal the request with False and its acceptance with True
-    //OR: 0 = request, 1 = accepted, -1 = declined
+  @MainActor func rematchRequest(gameID: String, signal: Int) async throws {
+    //Signal determines the type of request. 0 sends the request. 1 accepts. -1 declines.
     guard user != nil else { throw GameError.userIsNil }
-    madeRequest = true
+    guard (-1...1).contains(signal) else { return }
+    if signal == 0 { madeRequest = true }
     try await database.collection("games").document(gameID)
-      .updateData(["rematchSignal": 0])
+      .updateData(["rematchSignal": signal])
   }
-  
-  func acceptRematchRequest(gameID: String) async throws {
-    //We signal the request with False and its acceptance with True
-    guard user != nil else { throw GameError.userIsNil }
-    try await database.collection("games").document(gameID)
-      .updateData(["rematchSignal": 1])
-  }
-  
-  func declineRematchRequest(gameID: String) async throws {
-    guard user != nil else { throw GameError.userIsNil }
-    try await database.collection("games").document(gameID)
-      .updateData(["rematchSignal": -1])
-  }
-  
 
+  
   func playAgain(gameID: String) {
     guard user != nil else { return } //Do soemthing better with this
     database.collection("games").document(gameID)
@@ -189,7 +176,6 @@ extension GameViewModel {
             self.showRematchAlert = false
             self.rematchMsg = "Your opponent declined"
             self.showRematchAlert = self.madeRequest
-            //doesn't work.
           default:
             self.rematchMsg = self.madeRequest ? "Waiting for your opponent to accept" : "Your opponent is inviting you to a rematch"
             self.showRematchAlert = true
