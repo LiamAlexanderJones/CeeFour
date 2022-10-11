@@ -19,15 +19,21 @@ struct GridCellView: View {
         ZStack {
           Rectangle()
           Circle()
-            .padding(3)
+            .padding(4)
             .blendMode(.destinationOut)
         }
       }
-      .background(colour) // if LASTPOSITION, clear, otherwise colour
+      .background(colour)
       .overlay(
-        Circle()
-          .fill( highlighted ? Color.white : Color.clear)
-          .frame(width: 20, height: 20)
+        ZStack {
+          Circle()
+            .stroke(lineWidth: 4)
+            .foregroundColor(Color(red: 0, green: 0, blue: 5))
+            .padding(4)
+          Image(systemName: "star.fill")
+            .foregroundColor(highlighted ? Color.white : Color.clear)
+            .frame(width: 20, height: 20)
+        }
       )
     
   }

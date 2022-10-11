@@ -43,7 +43,6 @@ struct BoardView: View {
               )
             }
           }
-          
           .onTapGesture {
             if board.winningPositions.isEmpty && board.playerTurn {
               let success = board.addDisk(colour: board.playerColour, to: columnIndex)
@@ -64,6 +63,8 @@ struct BoardView: View {
           }
         }
       }
+      .padding(4)
+      .border(Color(red: 0, green: 0, blue: 5), width: 4)
     }
     .onChange(of: board.lastMove) { move in
       animateDiskDrop(colour: board.lastMoveColour, column: Int(move.x), row: Int(move.y))
@@ -73,6 +74,7 @@ struct BoardView: View {
   
   
   func animateDiskDrop(colour: Color, column: Int, row: Int) {
+    //Animating the disk drop relies on a bit of smoke and mirrors. When a disk is placed at a certain grid cell, it should change colour immediately. So what we do is hide that with obscured tuple,then animate a circle falling to that location. When it's time to animate the next move, we remove the circle and the obscured variable, and use them both again.
     obscured = (column, row)
     dropHeight = -3.5 * (width / 7)
     if column == -1 && row == -1 {
