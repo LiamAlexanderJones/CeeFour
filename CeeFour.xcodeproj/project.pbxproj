@@ -14,7 +14,6 @@
 		F17124D428059EFA003A4EA1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17124D328059EFA003A4EA1 /* Game.swift */; };
 		F1897D2427EC9DB600E47FA4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F1897D2327EC9DB600E47FA4 /* FirebaseAuth */; };
 		F1897D2627EC9DB600E47FA4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F1897D2527EC9DB600E47FA4 /* FirebaseFirestore */; };
-		F18B947F27D661AA00E46825 /* DevNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B947E27D661AA00E46825 /* DevNotes.swift */; };
 		F1CD7B5127F70C2500C8CAE2 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD7B5027F70C2500C8CAE2 /* ErrorHandler.swift */; };
 		F1DB4EAF27CE6D2B0039E2F4 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DB4EAE27CE6D2B0039E2F4 /* GridCellView.swift */; };
 		F1DB4EB127CE713B0039E2F4 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DB4EB027CE713B0039E2F4 /* GameView.swift */; };
@@ -52,7 +51,6 @@
 		F16F255527CF9B2E00A4101E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F17124D028059B26003A4EA1 /* RematchAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RematchAlertView.swift; sourceTree = "<group>"; };
 		F17124D328059EFA003A4EA1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		F18B947E27D661AA00E46825 /* DevNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevNotes.swift; sourceTree = "<group>"; };
 		F1CD7B5027F70C2500C8CAE2 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		F1DB4EAE27CE6D2B0039E2F4 /* GridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
 		F1DB4EB027CE713B0039E2F4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			children = (
 				F16F255527CF9B2E00A4101E /* GoogleService-Info.plist */,
 				F1E416F727C7D8D1003B69FE /* CeeFourApp.swift */,
-				F18B947E27D661AA00E46825 /* DevNotes.swift */,
 				F16F257A27CFC1A600A4101E /* Views */,
 				F156794127D7B44700029341 /* ViewModels */,
 				F17124D228059ED4003A4EA1 /* Models */,
@@ -343,7 +340,6 @@
 				F1E4172227C7D964003B69FE /* GameViewModel.swift in Sources */,
 				F17124D428059EFA003A4EA1 /* Game.swift in Sources */,
 				F13C2C6627D0F0E100E5E532 /* EntryViewModel.swift in Sources */,
-				F18B947F27D661AA00E46825 /* DevNotes.swift in Sources */,
 				F17124D128059B26003A4EA1 /* RematchAlertView.swift in Sources */,
 				F13C2C6427D0E6AE00E5E532 /* EntryView.swift in Sources */,
 			);

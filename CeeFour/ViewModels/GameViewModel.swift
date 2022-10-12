@@ -113,6 +113,8 @@ class GameViewModel: ObservableObject {
 
 //MARK: -Networking methods-
 extension GameViewModel {
+  
+  //We send only the move's column number via firebase, and allow the app to keep its own model and calculate the move my by the opponent based on the column number. While this is slightly more demanding of processing, it allows us to keep the model (a nested array of colours) "in house" rather than picking it apart into Firebase collections. This future-proofs the app, should we decided to change from Firebase to another provider. The downside is that there's a potential for the two board models in a game to desycnhronise in a nonobvious way. It may be useful to introduce bug checking for this possibility.
 
   func sendMove(column: Int, gameID: String) async throws {
     guard user != nil else { throw GameError.userIsNil }
